@@ -2,11 +2,20 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="h-screen bg-black flex items-center justify-center overflow-hidden relative">
+    <section className="min-h-screen bg-black flex items-center justify-center overflow-hidden relative px-6">
 
-      {/* 背景のゴールドの光 */}
       <motion.div
-        className="absolute w-[500px] h-[500px] bg-amber-400/20 blur-[150px] rounded-full"
+        className="
+          absolute
+          w-[250px]
+          h-[250px]
+          md:w-[500px]
+          md:h-[500px]
+          bg-amber-400/20
+          blur-[100px]
+          md:blur-[150px]
+          rounded-full
+        "
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -17,7 +26,6 @@ function Hero() {
         }}
       />
 
-      {/* メインコンテンツ */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -31,34 +39,39 @@ function Hero() {
           }}
           animate={{
             opacity: 1,
-            letterSpacing: "12px",
+            letterSpacing: "4px",
           }}
           transition={{
             duration: 2,
             ease: "easeOut",
           }}
-          className="text-white text-7xl md:text-8xl font-light"
+          className="
+            text-white
+            text-4xl
+            sm:text-5xl
+            md:text-8xl
+            font-light
+            px-4
+          "
         >
           LUMIÈRE OIL
         </motion.h1>
 
-        <p className="text-zinc-400 mt-6 text-xl">
+        <p className="text-zinc-400 mt-6 text-base md:text-xl">
           髪に、光を。
         </p>
 
         <motion.a
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            scale: 0.95,
-          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
           href="#product"
           className="
             inline-block
             mt-10
-            px-8
-            py-4
+            px-6
+            md:px-8
+            py-3
+            md:py-4
             rounded-full
             bg-amber-400
             text-black
@@ -70,7 +83,6 @@ function Hero() {
         </motion.a>
       </motion.div>
 
-      {/* スクロール誘導 */}
       <motion.div
         className="
           absolute
@@ -78,7 +90,8 @@ function Hero() {
           left-1/2
           -translate-x-1/2
           text-zinc-500
-          text-sm
+          text-xs
+          md:text-sm
           tracking-[4px]
         "
         animate={{

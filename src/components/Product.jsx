@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 const products = [
   {
     id: 1,
-    name: "Argan Hair Oil",
-    description: "乾燥した髪に潤いを。",
+    name: "track オイル No.3",
+    description: "4,620円",
     image: "/image/track.jpg",
-    amazon: "https://a.r10.to/hktUfI",
+    Rakuten: "https://a.r10.to/hktUfI",
   },
   {
     id: 2,
-    name: "Rosemary Hair Oil",
-    description: "すっきり、まとまる髪へ。",
-    image: "/image/track.jpg",
-    amazon: "https://a.r10.to/hktUfI",
+    name: "LOA THE OIL",
+    description: "4,543円",
+    image: "/image/loa.jpg",
+    Rakuten: "https://a.r10.to/hg2fq8",
   },
   {
     id: 3,
-    name: "Coconut Hair Oil",
-    description: "うるさら質感、毎日のケアに。",
-    image: "/image/track.jpg",
-    amazon: "https://a.r10.to/hktUfI",
+    name: "モロッカンオイル ",
+    description: "2090～11000円",
+    image: "/image/moro.jpg",
+    Rakuten: "https://a.r10.to/hYKWSx",
   },
 ];
 
@@ -105,7 +105,7 @@ function Product() {
                 duration-500
               "
             >
-              Amazonで購入
+              Rakutenで購入
             </a>
           </motion.div>
         ))}

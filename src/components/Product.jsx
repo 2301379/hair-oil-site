@@ -8,7 +8,20 @@ const products = [
     image: "/image/track.jpg",
     amazon: "https://a.r10.to/hktUfI",
   },
-
+  {
+    id: 2,
+    name: "Rosemary Hair Oil",
+    description: "すっきり、まとまる髪へ。",
+    image: "/image/track.jpg",
+    amazon: "https://a.r10.to/hktUfI",
+  },
+  {
+    id: 3,
+    name: "Coconut Hair Oil",
+    description: "うるさら質感、毎日のケアに。",
+    image: "/image/track.jpg",
+    amazon: "https://a.r10.to/hktUfI",
+  },
 ];
 
 function Product() {
